@@ -11,7 +11,7 @@ def receive():
     data = request.get_json()
     name = data.get('name')
     phone = data.get('phone')
-    print(f"收到：{name} - {phone}")
+    print(f"小如意收到：{name} - {phone}")
     return jsonify({"status": "received"})
 
 if __name__ == '__main__':
